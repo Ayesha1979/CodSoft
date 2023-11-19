@@ -1,0 +1,229 @@
+body{
+    margin: 0px;
+    padding: 0%;
+    font-family: 'Courier New';
+}
+#navbar header{
+    text-align: center;
+    
+}
+#navbar ul{
+    list-style-type: none;
+    background-color: hsla(182, 83%, 77%, 0.849);
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+#navbar a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+#navbar a:hover{
+    background-color:hsla(182, 49%, 53%, 0.849) ;
+}
+#navbar li{
+    float: right;
+}
+#aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    flex-direction: column;
+    float: left;
+}
+#aside img{
+    height: 500px;
+    width: 500px;
+}
+#section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    background-color:hsla(182, 100%, 86%, 0.897);
+    flex-direction: column;
+}
+#section h1, #section h2{
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+#section h1{
+    text-shadow: 3px 3px 5px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    
+}
+#section h1:hover{
+    animation:grow 2s infinite ;
+  
+}
+@keyframes grow{
+    50%{transform: scale(1,2);}
+}
+#section #box1{
+    padding: 20px;
+}
+#section #box1 #para{
+    padding: 20px;
+}
+#skills{
+    padding: 50px;
+    background-color:hsla(182, 100%, 86%, 0.897);
+}
+#skills header{
+    font-size: 50px;
+    font-style: bold;
+    text-shadow: 3px 3px 5px;
+}
+#skills li{
+    list-style: none;
+    margin: 20px 0s;
+    padding: 10px;
+}
+#skills #box2{
+    width: 600px;
+    margin: 60px auto;
+    color: black;
+    padding: 20px;
+    box-shadow: 0px 14px 28px hsla(182, 32%, 61%, 0.897), 0px 10px 10px hsla(182, 76%, 72%, 0.897);
+}
+.bar{
+    background: rgb(53, 209, 244);
+    display: block;
+    height: 20px;
+    border: 1px solid rgb(53, 209, 244);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgb(53, 209, 244), 0 1px 2px rgb(53, 209, 244);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgb(53, 209, 244),0 10px 10px rgb(53, 209, 244);
+}
+.bar span{
+    height: 100%;
+    display: block;
+    float: left;
+    background: linear-gradient(135deg, rgb(238, 121, 189)0%,rgb(236, 152, 210)100%);
+}
+.html{
+    width: 90%;
+    animation: htmlAnimation 3s;
+}
+.css{
+    width: 70%;
+    animation: cssAnimation 3s;
+}
+.js{
+    width: 30%;
+    animation: jsAnimation 3s;
+}
+.py{
+    width: 90%;
+    animation: pyAnimation 3s;
+}
+.c{
+    width: 20%;
+    animation: cAnimation  3s;
+}
+@keyframes htmlAnimation {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes cssAnimation {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes jsAnimation {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+@keyframes pyAnimation {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes cAnimation {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+#box1 button{
+    background-color: rgb(53, 209, 244);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    transform: translateX(150px);
+    border-radius: 20px;
+    border: none;
+}
+#box1 h4{
+    text-align: center;
+    font-style: bolder;
+    font-size: large;
+}
+#box1 button:hover{
+    background-color:rgba(35, 178, 210, 0.89) ;
+}
+
+#projects header{
+    padding: 40px;
+    background-color:hsla(182, 100%, 86%, 0.897);
+    font-size: 50px;
+    font-style: bold;
+    text-shadow: 3px 3px 5px;
+}
+#box3{
+    background-color:hsla(182, 100%, 86%, 0.897);
+    padding: 50px;
+}
+#box3 img{
+    height: 200px;
+    width: 200px;
+}
+#box3 #calculator{
+    display: inline-block;
+    transform: translateX(130px);
+    overflow: hidden;
+}
+#box3 #website{
+    display: inline-block;
+    transform: translateX(500px);
+}
+footer{
+    background-color: hsla(182, 83%, 77%, 0.849);
+    bottom: 0;
+    height: 10px;
+    width: 100%;
+    padding: 20px;
+}
